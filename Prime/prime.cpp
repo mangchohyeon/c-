@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 #include <fstream>
-
 using namespace std;
 
 int main() 
@@ -10,8 +9,7 @@ int main()
     //파일에서 읽어올 줄
     string line;
 
-    ifstream infile1;
-    infile1.open("Prime Information.txt");
+    ifstream infile1("Prime Information.txt");
     
     if(!infile1.is_open())
     {
