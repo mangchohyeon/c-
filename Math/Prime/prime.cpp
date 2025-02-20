@@ -1,17 +1,16 @@
+#include <fstream>
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <fstream>
 using namespace std;
 
 int main() 
 {
     //파일에서 읽어올 줄
     string line;
-
-    ifstream infile1("Prime Information.txt");
     
-    if(!infile1.is_open())
+    ifstream infile1("Prime Information.txt");
+    if(!infile1)
     {
         cerr << "Can't open the infile1\n";
         return -1;
